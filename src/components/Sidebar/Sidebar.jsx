@@ -17,7 +17,14 @@ import { useState } from "react";
 import WalletIcon from "@mui/icons-material/Wallet";
 import SummarizeIcon from "@mui/icons-material/Summarize";
 import SettingsIcon from "@mui/icons-material/Settings";
-
+import VideogameAssetIcon from "@mui/icons-material/VideogameAsset";
+import PaymentsIcon from "@mui/icons-material/Payments";
+import AddLocationAltIcon from "@mui/icons-material/AddLocationAlt";
+import DomainVerificationIcon from "@mui/icons-material/DomainVerification";
+import PeopleOutlineIcon from "@mui/icons-material/PeopleOutline";
+import ReportGmailerrorredIcon from "@mui/icons-material/ReportGmailerrorred";
+import ReportProblemIcon from "@mui/icons-material/ReportProblem";
+import FileOpenIcon from "@mui/icons-material/FileOpen";
 function Sidebar() {
   const [selectedItem, setSelectedItem] = useState(null);
   return (
@@ -72,7 +79,7 @@ function Sidebar() {
           selected={selectedItem === 2}
         >
           <ListItemIcon>
-            <WalletIcon />
+            <VideogameAssetIcon />
           </ListItemIcon>
           <ListItemText primary="Example" />
           {selectedItem === 2 ? (
@@ -89,7 +96,7 @@ function Sidebar() {
           selected={selectedItem === 3}
         >
           <ListItemIcon>
-            <WalletIcon />
+            <PaymentsIcon />
           </ListItemIcon>
           <ListItemText primary="Widgets" />
           {selectedItem === 3 ? (
@@ -106,7 +113,7 @@ function Sidebar() {
           selected={selectedItem === 4}
         >
           <ListItemIcon>
-            <WalletIcon />
+            <AddLocationAltIcon />
           </ListItemIcon>
           <ListItemText primary="Maps" />
           {selectedItem === 4 ? (
@@ -123,7 +130,7 @@ function Sidebar() {
           selected={selectedItem === 5}
         >
           <ListItemIcon>
-            <WalletIcon />
+            <DomainVerificationIcon />
           </ListItemIcon>
           <ListItemText primary="Authentication" />
           {selectedItem === 5 ? (
@@ -140,7 +147,7 @@ function Sidebar() {
           selected={selectedItem === 6}
         >
           <ListItemIcon>
-            <WalletIcon />
+            <PeopleOutlineIcon />
           </ListItemIcon>
           <ListItemText primary="Users" />
           {selectedItem === 6 ? (
@@ -157,14 +164,9 @@ function Sidebar() {
           selected={selectedItem === 7}
         >
           <ListItemIcon>
-            <WalletIcon />
+            <ReportGmailerrorredIcon />
           </ListItemIcon>
           <ListItemText primary="Error 404" />
-          {selectedItem === 7 ? (
-            <KeyboardArrowDownIcon />
-          ) : (
-            <KeyboardArrowRightIcon />
-          )}
         </ListItemButton>
 
         <ListItemButton
@@ -174,14 +176,9 @@ function Sidebar() {
           selected={selectedItem === 8}
         >
           <ListItemIcon>
-            <WalletIcon />
+            <ReportProblemIcon />
           </ListItemIcon>
-          <ListItemText primary="Error" />
-          {selectedItem === 8 ? (
-            <KeyboardArrowDownIcon />
-          ) : (
-            <KeyboardArrowRightIcon />
-          )}
+          <ListItemText primary="Error 505" />
         </ListItemButton>
 
         <ListItemButton
@@ -191,14 +188,9 @@ function Sidebar() {
           selected={selectedItem === 9}
         >
           <ListItemIcon>
-            <WalletIcon />
+            <FileOpenIcon />
           </ListItemIcon>
           <ListItemText primary="Maintence" />
-          {selectedItem === 9 ? (
-            <KeyboardArrowDownIcon />
-          ) : (
-            <KeyboardArrowRightIcon />
-          )}
         </ListItemButton>
 
         <h4>Element</h4>
