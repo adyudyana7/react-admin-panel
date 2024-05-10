@@ -1,13 +1,13 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Dashboard from "./pages/Dashboard/Dashboard";
-import MainLayout from "./layouts/MainLayout";
-import SignIn from "./components/SignIn";
-import { Toaster } from "sonner";
-import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
-import { pink } from "@mui/material/colors";
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Dashboard from './pages/Dashboard/Dashboard'
+import MainLayout from './layouts/MainLayout'
+import SignIn from './components/SignIn'
+import { Toaster } from 'sonner'
+import { CssBaseline, ThemeProvider, createTheme } from '@mui/material'
+import { pink } from '@mui/material/colors'
 const theme = createTheme({
   typography: {
-    fontFamily: "PT Serif",
+    fontFamily: 'PT Serif',
   },
   palette: {
     primary: {
@@ -16,7 +16,8 @@ const theme = createTheme({
       dark: pink[900],
     },
   },
-});
+})
+
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
             path="/"
             element={
               <MainLayout>
-                {" "}
+                {' '}
                 <Dashboard />
               </MainLayout>
             }
@@ -40,7 +41,7 @@ function App() {
         <Toaster richColors />
       </BrowserRouter>
     </ThemeProvider>
-  );
+  )
 }
 
-export default App;
+export default App
